@@ -3,18 +3,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
-
-
 <div class="offset-4 col-4">
-	<form action="" method="post"></form>
+	<form action="" method="post">
 	<div class="card">
 		<div class="card-header ">
 			<p>Login to System</p>
 		</div>
 		<div class="card-body">
-		
-		<jsp:include page="/common/inform.jsp"></jsp:include>
-		
+			<jsp:include page="/common/inform.jsp"></jsp:include>
 			<div class="form-group">
 				<label for="username">Username</label> <input type="text"
 					class="form-control" name="username" id="username"
@@ -39,5 +35,6 @@
 			<button class="btn btn-success">Login</button>
 		</div>
 	</div>
+	</form>
 </div>
 

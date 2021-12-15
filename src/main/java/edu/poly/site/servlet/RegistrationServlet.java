@@ -19,6 +19,7 @@ public class RegistrationServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PageInfo.prepareAndForwardSites(request, response, PageType.SITE_REGISTRATION_PAGE);
+		request.getRequestDispatcher("/Homepage").forward(request, response);
 	}
 
 	
@@ -31,7 +32,7 @@ public class RegistrationServlet extends HttpServlet {
 			
 			UserDao dao = new UserDao();
 			dao.insert(user);
-			request.getRequestDispatcher("/Login").forward(request, response);
+			request.getRequestDispatcher("/Homepage").forward(request, response);
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("error", e.getMessage());

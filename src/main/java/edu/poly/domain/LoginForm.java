@@ -3,6 +3,7 @@ package edu.poly.domain;
 public class LoginForm {
 	private String username, password;
 	private boolean remember;
+	
 	public String getUsername() {
 		return username;
 	}

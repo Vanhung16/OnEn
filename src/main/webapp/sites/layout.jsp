@@ -34,8 +34,8 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                <i class="fa fa-home" aria-hidden="true"></i> 
+                            <a class="nav-link" href="Homepage">
+                                <i class="fa fa-home" aria-hidden="true"></i> Home
                                 <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -61,12 +61,17 @@
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 My Account</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            
+                            	<c:if test="${!isLogin }">
                                 <a class="dropdown-item" href="Login">Login</a>
                                 <a class="dropdown-item" href="ForgotPassword">Forgot password</a>
                                 <a class="dropdown-item" href="Registration">Registration</a>
-                                <a class="dropdown-item" href="LogOff">Logoff</a>
+                                </c:if>
+                                <c:if test="${isLogin }">
+                                <a class="dropdown-item" href="Logoff">Logoff</a>
                                 <a class="dropdown-item" href="ChangePassword">Change password</a>
                                 <a class="dropdown-item" href="EditProfile">Edit profile</a>
+                                </c:if>
                             </div>
                         </li>
                     </ul>

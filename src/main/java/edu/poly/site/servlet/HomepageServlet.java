@@ -11,7 +11,7 @@ import edu.poly.common.PageInfo;
 import edu.poly.common.PageType;
 
 
-@WebServlet("/HomepageServlet")
+@WebServlet("/Homepage")
 public class HomepageServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,7 +20,7 @@ public class HomepageServlet extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		doGet(request, response);
 	}
 
 }
