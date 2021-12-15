@@ -4,6 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 
+
 <div class="offset-4 col-4">
 	<form action="" method="post"></form>
 	<div class="card">
@@ -11,6 +12,9 @@
 			<p>Login to System</p>
 		</div>
 		<div class="card-body">
+		
+		<jsp:include page="/common/inform.jsp"></jsp:include>
+		
 			<div class="form-group">
 				<label for="username">Username</label> <input type="text"
 					class="form-control" name="username" id="username"

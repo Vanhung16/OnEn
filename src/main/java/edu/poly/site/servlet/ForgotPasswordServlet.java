@@ -13,7 +13,7 @@ import edu.poly.common.PageType;
 /**
  * Servlet implementation class RegistrationpageServlet
  */
-@WebServlet("/RegistrationpageServlet")
+@WebServlet("/ForgotPassword")
 public class ForgotPasswordServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

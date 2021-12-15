@@ -10,6 +10,7 @@
 			<property name="javax.persistence.jdbc.user" value="sa"/>
 			<property name="javax.persistence.jdbc.password" value="sa"/>
 			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+			<property name="hibernate.dialet" value="org.dialet.SQLServerDialet"/>
 		</properties>
 	</persistence-unit>
 </persistence>

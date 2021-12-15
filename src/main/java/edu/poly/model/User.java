@@ -28,6 +28,17 @@ public class User implements Serializable {
 	@Column(name="Fullname")
 	private String fullname;
 
+	@Column(name="Password")
+	private String password;
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	//bi-directional many-to-one association to Favorite
 	@OneToMany(mappedBy="user")
 	private List<Favorite> favorites;

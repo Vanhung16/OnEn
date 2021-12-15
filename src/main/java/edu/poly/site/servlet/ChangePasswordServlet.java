@@ -11,7 +11,7 @@ import edu.poly.common.PageInfo;
 import edu.poly.common.PageType;
 
 
-@WebServlet("/ChangePasswordServlet")
+@WebServlet("/ChangePassword")
 public class ChangePasswordServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

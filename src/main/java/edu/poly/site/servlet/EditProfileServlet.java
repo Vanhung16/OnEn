@@ -11,7 +11,7 @@ import edu.poly.common.PageInfo;
 import edu.poly.common.PageType;
 
 
-@WebServlet("/EditProfileServlet")
+@WebServlet("/EditProfile")
 public class EditProfileServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
