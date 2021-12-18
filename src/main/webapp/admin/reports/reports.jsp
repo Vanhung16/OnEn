@@ -29,12 +29,14 @@
 					<td>Lasted Date</td>
 					<td>Oldest Date</td>
 				</tr>
-				<tr>
-					<td>Java Programming</td>
-					<td>102</td>
-					<td>1/12/2020</td>
-					<td>1/12/2020</td>
+				<c:forEach var="item" items="${favlist }">
+					<tr>
+					<td>${item.videoTitle }</td>
+					<td>${item.favoriteCount }</td>
+					<td>${item.newestDate }</td>
+					<td>${item.oldestDate }</td>
 				</tr>
+				</c:forEach>
 			</table>
 		</div>
 		<div class="tab-pane fade" id="favoriteUsers" role="tabpanel"
@@ -44,12 +46,13 @@
 					<div class="col">
 						<div class="form-inline">
 							<div class="form-group">
-								<label>Video Title <select name="" id=""
-									class="form-control mr-3 ml-3">
-										<option value="">Java Programming</option>
-										<option value="">Java Programming</option>
-										<option value="">Java Programming</option>
-										<option value="">Java Programming</option>
+								<label>Video Title
+								<select name="videoUserId" id="videoUserId"
+									class="form-control mr-3 ml-3">										
+										<c:forEach var="item" items="${vidList }">
+											<option value="${item.videoId }"
+											${item.videoId == videoUserId?'selected':'' }>${item.title }</option>
+										</c:forEach>
 								</select>
 								</label>
 								<button class="btn btn-info">Report</button>
@@ -66,12 +69,14 @@
 								<td>Email</td>
 								<td>Favorite Date</td>
 							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
+							<c:forEach var="item" items="${favUlist }">
+								<tr>
+									<td>${item.username }</td>
+									<td>${item.fullname }</td>
+									<td>${item.email }</td>
+									<td>${item.likeDate }</td>
+								</tr>
+							</c:forEach>
 						</table>
 					</div>
 				</div>
