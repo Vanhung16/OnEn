@@ -23,19 +23,19 @@
 		<div class="tab-pane fade show active" id="favorites" role="tabpanel"
 			aria-labelledby="favorites-tab">
 			<table class="table table-bordered table-striped mt-3">
-				<tr>
-					<td>Video Title</td>
-					<td>Favorites Count</td>
-					<td>Lasted Date</td>
-					<td>Oldest Date</td>
-				</tr>
+					<tr>
+						<td>Video Title</td>
+						<td>Favorites Count</td>
+						<td>Lasted Date</td>
+						<td>Oldest Date</td>
+					</tr>
 				<c:forEach var="item" items="${favlist }">
 					<tr>
-					<td>${item.videoTitle }</td>
-					<td>${item.favoriteCount }</td>
-					<td>${item.newestDate }</td>
-					<td>${item.oldestDate }</td>
-				</tr>
+						<td>${item.videoTitle }</td>
+						<td>${item.favoriteCount }</td>
+						<td>${item.newestDate }</td>
+						<td>${item.oldestDate }</td>
+					</tr>
 				</c:forEach>
 			</table>
 		</div>

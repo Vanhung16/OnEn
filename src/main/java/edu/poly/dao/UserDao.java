@@ -44,4 +44,19 @@ public class UserDao extends AbstractEntityDao<User>{
 		}
 	}
 	
+	public User findByUsernameAndEmail(String username, String email) {
+		EntityManager em = JpaUtils.getEntityManager();
+		
+		String jpql = "select u from User u where u.username = :username and u.email = :email ";
+		
+		try {
+			TypedQuery<User> query = em.createQuery(jpql, User.class);
+			query.setParameter("username", username);
+			query.setParameter("email", email);
+			
+			return query.getSingleResult();
+		} finally {
+			em.close();
+		}
+	}
 }

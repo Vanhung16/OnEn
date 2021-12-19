@@ -6,23 +6,23 @@ public class FavoriteUserReport {
 	private String username;
 	private String fullname;
 	private String email;
-	private Date likedDate;
+	private Date likeDate;
 	
 		
 	public FavoriteUserReport() {
 		
 	}
-	public FavoriteUserReport(String username, String fullname, String email, Date likedDate) {
+	public FavoriteUserReport(String username, String fullname, String email, Date likeDate) {
 		
 		this.username = username;
 		this.fullname = fullname;
 		this.email = email;
-		this.likedDate = likedDate;
+		this.likeDate = likeDate;
 	}
-	public String getusername() {
+	public String getUsername() {
 		return username;
 	}
-	public void setusername(String username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 	public String getFullname() {
@@ -37,11 +37,11 @@ public class FavoriteUserReport {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Date getlikedDate() {
-		return likedDate;
+	public Date getlikeDate() {
+		return likeDate;
 	}
-	public void setlikedDate(Date likedDate) {
-		this.likedDate = likedDate;
+	public void setlikeDate(Date likeDate) {
+		this.likeDate = likeDate;
 	}
 	
 	

@@ -30,17 +30,17 @@
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="Admin/VideosManagement">
                                     <i class="fa fa-info" aria-hidden="true"></i>  Videos
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="UserManagementServlet">
                                 <i class="fa fa-id-card" aria-hidden="true"></i>  Users
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="ReportsManagementServlet">
                                 <i class="fa fa-comment" aria-hidden="true"></i>  Reports
                                 </a>
                             </li>

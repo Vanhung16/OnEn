@@ -35,8 +35,8 @@ public class FavoriteDao extends AbstractEntityDao<Favorite> {
 	}
 	
 	public List<FavoriteUserReport> reportFavoriteUsersByVideo(String videoId){
-		String jpql = "Select new edu.poly.domain.FavoriteReport(f.user.username, f.user.fullname, f.user.email, "
-				+ " f.likedDate) from Favorite f where f.video.videoId = :videoId ";
+		String jpql = "Select new edu.poly.domain.FavoriteUserReport(f.user.username, f.user.fullname, "
+				+ "f.user.email, f.likedDate) from Favorite f where f.video.videoId = :videoId ";
 		
 		EntityManager em = JpaUtils.getEntityManager();
 		
