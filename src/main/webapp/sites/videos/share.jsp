@@ -5,16 +5,23 @@
 
 
 <div class="offset-3 col-6">
-	<form action="" method="post">
+	<form action="shareVideo" method="post">
+		<input type="hidden" name="videoId" value="${videoId }">
 		<div class="card">
 			<div class="card-header">Send video to Your Friends</div>
 			<div class="card-body">
-				<div class="form-group">
-					<label for="email">Your Friends' emails:</label> <input type="text"
+			<jsp:include page="/common/inform.jsp"></jsp:include>
+				<div class="row">
+					<div class="col">
+						<div class="form-group">
+					<label for="email">Your Friends' emails:</label> 
+					<input type="text"
 						class="form-control" name="email" id="email"
 						aria-describedby="helpId" placeholder="Email"> <small
 						id="emailHelperId" class="form-text text-muted"> Email is
 						required! </small>
+				</div>
+					</div>
 				</div>
 			</div>
 			<div class="card-footer">

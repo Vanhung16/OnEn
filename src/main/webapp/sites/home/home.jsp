@@ -5,108 +5,27 @@
 
 <div class="col-9">
 	<div class="row p-2">
+		<c:forEach var="item" items="${videos }">
 		<div class="col-3 mt-2">
+		
 			<div class="card text-left">
 				<img class="card-img-top" src="holder.js/100px180/" alt="">
 				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" width="90%" alt=""
+					<img src="${ !empty item.poster ? item.poster : 'images/desktop.jfif' }" width="90%" alt=""
 						class="img-fluid">
 					<div class="row border-top mt-2">
-						<b>video title</b>
+						<b>${item.title }</b>
 					</div>
 				</div>
 				<div class="card-footer">
-					<a href="" class="btn btn-success">Like</a> <a href=""
-						class="btn btn-info">Share</a>
+					<a href="likeVideo?videoId=${item.videoId }" class="btn btn-success">Like</a> 
+					<a href="shareVideo?videoId=${item.videoId }" class="btn btn-info">Share</a>
 				</div>
 			</div>
 
 		</div>
-		<div class="col-3 mt-2">
-			<div class="card text-left">
-				<img class="card-img-top" src="holder.js/100px180/" alt="">
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" width="90%" alt=""
-						class="img-fluid">
-					<div class="row border-top mt-2">
-						<b>video title</b>
-					</div>
-				</div>
-				<div class="card-footer">
-					<a href="" class="btn btn-success">Like</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-
-		</div>
-		<div class="col-3 mt-2">
-			<div class="card text-left">
-				<img class="card-img-top" src="holder.js/100px180/" alt="">
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" width="90%" alt=""
-						class="img-fluid">
-					<div class="row border-top mt-2">
-						<b>video title</b>
-					</div>
-				</div>
-				<div class="card-footer">
-					<a href="" class="btn btn-success">Like</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-
-		</div>
-		<div class="col-3 mt-2">
-			<div class="card text-left">
-				<img class="card-img-top" src="holder.js/100px180/" alt="">
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" width="90%" alt=""
-						class="img-fluid">
-					<div class="row border-top mt-2">
-						<b>video title</b>
-					</div>
-				</div>
-				<div class="card-footer">
-					<a href="" class="btn btn-success">Like</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-
-		</div>
-		<div class="col-3 mt-2">
-			<div class="card text-left">
-				<img class="card-img-top" src="holder.js/100px180/" alt="">
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" width="90%" alt=""
-						class="img-fluid">
-					<div class="row border-top mt-2">
-						<b>video title</b>
-					</div>
-				</div>
-				<div class="card-footer">
-					<a href="" class="btn btn-success">Like</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-
-		</div>
-		<div class="col-3 mt-2">
-			<div class="card text-left">
-				<img class="card-img-top" src="holder.js/100px180/" alt="">
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" width="90%" alt=""
-						class="img-fluid">
-					<div class="row border-top mt-2">
-						<b>video title</b>
-					</div>
-				</div>
-				<div class="card-footer">
-					<a href="" class="btn btn-success">Like</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-
-		</div>
+		</c:forEach>
+		
 	</div>
 	<div class="row">
 		<div class="col">
