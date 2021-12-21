@@ -53,4 +53,5 @@ public class FavoriteDao extends AbstractEntityDao<Favorite> {
 		return list;
 	}
 	
+	
 }

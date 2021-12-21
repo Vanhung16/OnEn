@@ -49,9 +49,9 @@ public class ChangePasswordServlet extends HttpServlet {
 			if(!form.getConfirmPassword().equals(form.getPassword())) {
 				request.setAttribute("error", "Password doesn't match ");
 			}else {
-			UserDao dao = new UserDao();
-			dao.ChangePassword(form.getUsername(), form.getCurrentPassword(), form.getPassword());
-			request.setAttribute("message", "Password was changed!");
+				UserDao dao = new UserDao();
+				dao.ChangePassword(form.getUsername(), form.getCurrentPassword(), form.getPassword());
+				request.setAttribute("message", "Password was changed!");
 			}
 			
 		} catch (Exception e) {

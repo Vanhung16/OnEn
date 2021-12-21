@@ -53,13 +53,19 @@
 				<div class="card-header">
 					<i class="fa fa-thumbs-up" aria-hidden="true"></i>Favorite
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">Laptop</li>
-					<li class="list-group-item">Computer</li>
-					<li class="list-group-item">Laptop</li>
-					<li class="list-group-item">Laptop</li>
-					<li class="list-group-item">Laptop</li>
+				<c:if test="${!isLogin }">
+					<ul class="list-group list-group-flush">					
+					<li class="list-group-item"></li>
 				</ul>
+				</c:if>
+				<c:if test="${isLogin }">
+					<ul class="list-group list-group-flush">
+					
+					<c:forEach var = "item" items="${fvList }">
+						<li class="list-group-item">${item.video }</li>						
+					</c:forEach>
+				</ul>
+				</c:if>
 			</div>
 		</div>
 	</div>

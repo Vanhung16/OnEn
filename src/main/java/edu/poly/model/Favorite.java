@@ -18,6 +18,7 @@ public class Favorite implements Serializable {
 
 	@Id
 	@Column(name="FavoriteId")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int favoriteId;
 
 	@Column(name="LikedDate")

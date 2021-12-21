@@ -6,86 +6,23 @@
 
 <div class="col">
 	<div class="row p-2">
-		<div class="col-3 mt-2">
+		<c:forEach var="item" items="${fvList }">
+			<div class="col-3 mt-2">
 			<div class="card">
 				<div class="card-header">Header</div>
 				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" alt=""
-						class="img-fluid">
+					<img src="${item.poster }" alt="" class="img-fluid">
 					<div class="row">
 						<b>Video title</b>
 					</div>
 				</div>
 				<div class="card-footer text-muted ">
-					<a href="" class="btn btn-primary">Unlike</a> <a href=""
-						class="btn btn-info">Share</a>
+					<a href="" class="btn btn-primary">Unlike</a>
+					 <a href=""	class="btn btn-info">Share</a>
 				</div>
 			</div>
 		</div>
-		<div class="col-3 mt-2">
-			<div class="card">
-				<div class="card-header">Header</div>
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" alt=""
-						class="img-fluid">
-					<div class="row">
-						<b>Video title</b>
-					</div>
-				</div>
-				<div class="card-footer text-muted ">
-					<a href="" class="btn btn-primary">Unlike</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-3 mt-2">
-			<div class="card">
-				<div class="card-header">Header</div>
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" alt=""
-						class="img-fluid">
-					<div class="row">
-						<b>Video title</b>
-					</div>
-				</div>
-				<div class="card-footer text-muted ">
-					<a href="" class="btn btn-primary">Unlike</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-3 mt-2">
-			<div class="card">
-				<div class="card-header">Header</div>
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" alt=""
-						class="img-fluid">
-					<div class="row">
-						<b>Video title</b>
-					</div>
-				</div>
-				<div class="card-footer text-muted ">
-					<a href="" class="btn btn-primary">Unlike</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-3 mt-2">
-			<div class="card">
-				<div class="card-header">Header</div>
-				<div class="card-body">
-					<img src="../image/iphone-12-didongviet-1.jpg" alt=""
-						class="img-fluid">
-					<div class="row">
-						<b>Video title</b>
-					</div>
-				</div>
-				<div class="card-footer text-muted ">
-					<a href="" class="btn btn-primary">Unlike</a> <a href=""
-						class="btn btn-info">Share</a>
-				</div>
-			</div>
-		</div>
+		</c:forEach>
 	</div>
 	<div class="row">
 		<div class="col">
